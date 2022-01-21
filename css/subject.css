@@ -1,0 +1,429 @@
+.subject {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* overflow: scroll; */
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.subject .subjectInfo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: none;
+}
+.subject .subjectInfo p {
+    margin: 0 15px;
+    font-family: var(--mainArFont);
+}
+.subject .subjectContent {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    padding: 0 10px 10px;
+    text-align: center;
+    font-family: var(--mainArFont);
+    overflow-y: scroll; 
+}
+@media only screen and (max-width: 768px) {
+    .subject .subjectContent img {
+        width: 100% !important;
+    }
+}
+.subject .subjectContent a {
+    -webkit-text-decoration: revert;
+            text-decoration: revert;
+    font-weight: bold;
+    color: var(--navSkyBlue);
+    text-shadow: 0 0 2.5px rgb(0 0 0 / 10%);
+}
+.subject .subjectContent hr {
+    height: 5px;
+    margin: 15px auto 5px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: var(--navSkyBlue);
+    -webkit-box-shadow: 0 0 2px 0px var(--navSkyBlue);
+            box-shadow: 0 0 2px 0px var(--navSkyBlue);
+    opacity: 0.5;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.mainContainer.dark .subject .subjectContent hr {
+    background: var(--darkBlack);
+    -webkit-box-shadow: 0 0 2px 0px var(--darkBlack);
+            box-shadow: 0 0 2px 0px var(--darkBlack);
+}
+.mainContainer.dark .subject {
+    color: var(--grayWhite);
+}
+.subject::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0px;
+}
+.subject .subjectContent::-webkit-scrollbar {
+    background-color: transparent;
+    width: 7.5px;
+    border-radius: 5px;
+}
+.subject .subjectContent::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+}
+.mainContainer.light .subject .subjectContent::-webkit-scrollbar-thumb {
+    background-color: var(--navSkyBlue);
+}
+.mainContainer.dark .subject .subjectContent::-webkit-scrollbar-thumb {
+    background-color: var(--grayBlack);
+}
+
+.googleAdenses,
+.usageAgreement,
+.userLogin {
+    width: 85%;
+    /* min-height: 100vh; */
+    margin: 0 auto;
+    padding-top: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.googleAdensesContent,
+.usageAgreementContent,
+.userLoginContent {
+    width: 100%;
+    height: 71vh;
+    padding: 50px 10px 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    border-radius: 25px;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+}
+.mainContainer.light .googleAdensesContent,
+.mainContainer.light .usageAgreementContent {
+    border: 1px solid var(--navSkyBlue);
+    background: -o-linear-gradient(
+        215deg
+        , rgba(238,238,238, 0.75) 50%, rgb(238 238 238 / 0.05) 100%);
+    background: linear-gradient(
+        235deg
+        , rgba(238,238,238, 0.75) 50%, rgb(238 238 238 / 0.05) 100%);
+} 
+.mainContainer.dark .googleAdensesContent,
+.mainContainer.dark .usageAgreementContent {
+    border: 1px solid var(--darkBlack);
+    color: var(--grayWhite);
+    background: rgba(33, 33, 33, 0.5);
+} 
+.googleAdensesContent .content::-webkit-scrollbar,
+.usageAgreementContent::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0px;
+}
+.googleAdensesContent .content::-webkit-scrollbar,
+.usageAgreementContent .content::-webkit-scrollbar {
+    background-color: transparent;
+    width: 7.5px;
+    border-radius: 5px;
+}
+.googleAdensesContent .content::-webkit-scrollbar-thumb,
+.usageAgreementContent .content::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+}
+.mainContainer.light .googleAdensesContent .content::-webkit-scrollbar-thumb,
+.mainContainer.light .usageAgreementContent .content::-webkit-scrollbar-thumb {
+    background-color: var(--navSkyBlue);
+}
+.mainContainer.dark .googleAdensesContent .content::-webkit-scrollbar-thumb,
+.mainContainer.dark .usageAgreementContent .content::-webkit-scrollbar-thumb {
+    background-color: var(--darkBlack);
+}
+.usageAgreementContent .content {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.usageAgreementContent .content p {
+    padding-left: 10px;
+    line-height: 1.75;
+    font-family: var(--mainArFont);
+    text-shadow: 0 0 2.5px rgb(0 0 0 / 15%);
+}
+.usageAgreementContent .content a {
+    -webkit-text-decoration: revert;
+            text-decoration: revert;
+    font-weight: bold;
+    color: var(--navSkyBlue);
+    text-shadow: 0 0 2.5px rgb(0 0 0 / 10%);
+}
+
+.usageAgreement .sectionControls {
+    min-width: 35%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateY(25px);
+        -ms-transform: translateY(25px);
+            transform: translateY(25px);
+    font-size: 1.5em;
+    border-radius: 15px;
+    z-index: 1;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.mainContainer.light .usageAgreement .sectionControls {
+    background: var(--grayWhite);
+}
+.mainContainer.dark .usageAgreement .sectionControls {
+    background: var(--grayBlack);
+}
+
+.userLogin {
+    min-height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.userLoginContent {
+    position: relative;
+    width: 75%;
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 15px;
+    border: 1px solid var(--navSkyBlue);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+}
+.mainContainer.dark .userLoginContent {
+    color: var(--grayWhite);
+    border: 1px solid var(--darkBlack);
+}
+.userLoginContent::before {
+    position: absolute;
+    content: 'تسجيل الدخول';
+    width: 25%;
+    height: 50px;
+    top: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.75em;
+    font-family: var(--mainArFont);
+    border-radius: 15px;
+    border: 1px solid var(--navSkyBlue);
+    background-color: var(--grayWhite);
+}
+.mainContainer.dark .userLoginContent::before {
+    background-color: var(--grayBlack);
+    border: 1px solid var(--darkBlack);
+}
+
+.userLoginContent form {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.userLoginContent .inputBox {
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.userLoginContent form span {
+    font-size: 1.15em;
+    font-family: var(--mainArFont);
+    text-shadow: 0 0 5px rgb(0, 0, 0, 0.25);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.mainContainer.dark .userLoginContent form span {
+    color: var(--grayWhite);
+}
+.userLoginContent form input {
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--mainArFont);
+    text-align: center;
+    text-shadow: 0 0 5px rgb(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.mainContainer.light .userLoginContent form input {
+    color: var(--grayBlack);
+    border-bottom: 1px solid var(--navSkyBlue);
+}
+.mainContainer.dark .userLoginContent form input {
+    color: var(--grayWhite);
+    border-bottom: 1px solid var(--grayWhite);
+}
+.userLoginContent form a {
+    text-decoration: none;
+    color: var(--grayBlack);
+    font-family: var(--mainArFont);
+    font-weight: 400;
+    text-shadow: 0 0 5px rgb(0, 0, 0, 0.25);
+}
+.mainContainer.dark .userLoginContent form a {
+    color: var(--grayWhite);
+}
+.userLoginContent form button[type="submit"] {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    bottom: -25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 25px;
+    color: var(--grayWhite);
+    font-family: var(--mainArFont);
+    font-size: 1em;
+    border: none;
+    -webkit-box-shadow: 0 0 10px 2.5px rgba(0, 0, 0, 0.15),
+        0 0 10px 2.5px rgba(0, 0, 0, 0.075) inset;
+            box-shadow: 0 0 10px 2.5px rgba(0, 0, 0, 0.15),
+        0 0 10px 2.5px rgba(0, 0, 0, 0.075) inset;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.userLoginContent form button[type="submit"]:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+.mainContainer.light .userLoginContent form button[type="submit"] {
+    background: var(--navSkyBlue);
+}
+.mainContainer.dark .userLoginContent form button[type="submit"] {
+    background: -o-linear-gradient(315deg, rgba(33,33,33,1) 50%, rgba(22,22,22,1) 120%);
+    background: linear-gradient(135deg, rgba(33,33,33,1) 50%, rgba(22,22,22,1) 120%);
+    border: 1px solid var(--grayBlack);
+}
+
+.errorPage {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--mainArFont);
+    text-align: center;
+    line-height: 2;
+    text-shadow: 0 0 5px rgb(0, 0, 0, 0.25);
+}
+.mainContainer.dark .errorPage {
+    color: var(--grayWhite);
+}
+.errorPage img {
+    width: 90%;
+    margin: 50px 0 10px;
+}
